@@ -10,7 +10,9 @@ class Wagon {
     }
 
     join(traveler) {
-        if (this.getAvailableSeatCount() > 0) return this.passengers.push(traveler)
+        if (this.getAvailableSeatCount() > 0) {
+            this.passengers.push(traveler)
+        }
     }
     // work on making it shorter instead
     shouldQuarantine() {
@@ -24,13 +26,13 @@ class Wagon {
     }
     //make succinct
     totalFood() {
-        let food = 0
+        let totalFood = 0
         for (let index = 0; index < this.passengers.length; index++) {
-            food += this.passengers[index].food
+            totalFood += this.passengers[index].food
 
 
         }
 
-        return food
+        return totalFood
     }
 }

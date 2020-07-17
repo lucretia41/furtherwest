@@ -17,7 +17,8 @@ addPassengerButton.className = 'addPassenger'
 addPassengerButton.append('Board Wagon')
 addPassengerButton.addEventListener('click', function () {
     console.log('Board Wagon Clicked')
-
+//const aboard = document.querySelector('boardwagon')
+let aboard = document.querySelector('traveler').value
 })
 
 let huntButton = document.createElement('button')
