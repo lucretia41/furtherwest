@@ -4,29 +4,42 @@ newDiv.id = 1
 newDiv.append('Go West')
 
 let goWestimg = document.createElement('img')
-goWestimg.src = './assets/images/headed west.jpeg'
+goWestimg.src = './assets/images/download.jpeg'
 goWestimg.style.textAlign = 'center'
 goWestimg.style.display = 'block'
 goWestimg.style.margin = 'auto'
+goWestimg.style.height = '300px'
+goWestimg.style.width = '300px'
 
 
 let addPassengerButton = document.createElement('button')
 addPassengerButton.className = 'addPassenger'
 addPassengerButton.append('Board Wagon')
+addPassengerButton.addEventListener('click', function () {
+    console.log('Board Wagon Clicked')
 
+})
 
 let huntButton = document.createElement('button')
 huntButton.className = 'hunt'
 huntButton.append('Hunt')
-
+huntButton.addEventListener('click', function () {
+    console.log('Hunt Clicked')
+})
 let consumeButton = document.createElement('button')
 consumeButton.className = 'consume'
-consumeButton.append('Eat')
+consumeButton.append('Supplies')
+consumeButton.addEventListener('click', function () {
+    console.log('Supplies Clicked')
+})
 
 let loadButton = document.createElement('button')
 loadButton.className = 'onboard'
-loadButton.append('Wagon Load')
-
+loadButton.append('Manifest')
+loadButton.addEventListener('click', function () {
+    console.log('Manifest clicked')
+    let manifestData = this.innerHTML.value
+})
 
 
 let sectionElement = document.querySelector('section')
