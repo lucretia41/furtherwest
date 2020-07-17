@@ -7,7 +7,7 @@ class Doctor extends Traveler{
     }
     heal(traveler) {
         //returns traveler to healthy true
-        return traveler.isHealthy = true
+        traveler.isHealthy = true
     }
 
 }
