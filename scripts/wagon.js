@@ -7,6 +7,7 @@ class Wagon {
 
     getAvailableSeatCount() {
         return this.capacity - this.passengers.length
+        
     }
 
     join(traveler) {

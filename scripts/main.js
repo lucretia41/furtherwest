@@ -16,30 +16,30 @@ let addPassengerButton = document.createElement('button')
 addPassengerButton.className = 'addPassenger'
 addPassengerButton.append('Board Wagon')
 addPassengerButton.addEventListener('click', function () {
-    console.log('Board Wagon Clicked')
-//const aboard = document.querySelector('boardwagon')
-let aboard = document.querySelector('traveler').value
+    console.log('Juan boards Wagon')
+    //const aboard = document.querySelector('boardwagon')
+
 })
 
 let huntButton = document.createElement('button')
 huntButton.className = 'hunt'
 huntButton.append('Hunt')
 huntButton.addEventListener('click', function () {
-    console.log('Hunt Clicked')
+    console.log('Sara Hunts for food')
 })
 let consumeButton = document.createElement('button')
 consumeButton.className = 'consume'
 consumeButton.append('Supplies')
 consumeButton.addEventListener('click', function () {
-    console.log('Supplies Clicked')
+    console.log('One week of supplies available')
 })
 
 let loadButton = document.createElement('button')
 loadButton.className = 'onboard'
 loadButton.append('Manifest')
 loadButton.addEventListener('click', function () {
-    console.log('Manifest clicked')
-    let manifestData = this.innerHTML.value
+    console.log('Juan, Sara, Henrietta, Dr Smith are on the wagon train')
+
 })
 
 

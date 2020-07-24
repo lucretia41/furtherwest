@@ -11,7 +11,7 @@ class Traveler {
 
     // i like this version much better for if else
     eat() {
-       return (this.food > 0) ? this.food = this.food - 1 : this.isHealthy = false
+        (this.food > 0) ? this.food = this.food - 1 : this.isHealthy = false
     }
 
 } 
